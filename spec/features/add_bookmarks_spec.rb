@@ -6,6 +6,6 @@ feature 'Add bookmark' do
   fill_in 'title', with: "Website"
   fill_in 'url', with: "wwww.iamwebsite.com"
   click_button 'Submit'
-  expect(page).to have_content "wwww.iamwebsite.com"
+  expect(page).to have_content "Website"
   end
 end
