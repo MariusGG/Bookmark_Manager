@@ -1,14 +1,51 @@
-<p> Bookmark page </p>
-<p> www.bookmark.com </p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bookmark Manager</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./main.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <div class="content">
+    <header class="topnav">
+        <a href="/"><h2> Bookmark Manager </h2></a>
+      <nav>
+        <!-- <form method="get" action="/bookmarks">
+          <input class="links" id="show_id" type="submit" name="Add" value="Show">
+        </form>
+        <form method="get" action="/add_bookmarks">
+          <input class="links" type="submit" name="Add" value="Add">
+        </form> -->
+      </nav>
+    </header>
+
+    <main>
+      <p> Bookmark page </p>
+      <p> www.bookmark.com </p>
 
 
 
-<ul>
-  <% @bookmarks.each do |bookmark| %>
-    <li>
-      <a href="<%= bookmark.url %>">
-        <%= bookmark.title %>
-      </a>
-    </li>
-  <% end %>
-</ul>
+      <ul>
+        <% @bookmarks.each do |bookmark| %>
+          <li>
+            <a href="<%= bookmark.url %>">
+              <%= bookmark.title %>
+            </a>
+          </li>
+        <% end %>
+      </ul>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer_text">
+        <p>This website was built at <span>Makers Academy</span> by Marius Guei 2018</p>
+        <p>Website was built using <span>Ruby, Sinatra, PostgreSQL, Capybara, HTML and CSS</span>.</p>
+      </div>
+      <a href="/"><img src="makers-logo.png" alt="makers logo"></a>
+    </footer>
+  </div>
+</body>
+</html>
