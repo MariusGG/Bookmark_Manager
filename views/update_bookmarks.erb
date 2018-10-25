@@ -10,25 +10,17 @@
 <body>
   <div class="content">
     <header class="topnav">
-        <a href="/"><h2> Bookmark Manager </h2></a>
-      <nav>
-        <form method="get" action="/bookmarks">
-          <input class="links" id="show_id" type="submit" name="Add" value="Show">
-        </form>
-        <form method="get" action="/add_bookmarks">
-          <input class="links" type="submit" name="Add" value="Add">
-        </form>
-        <form method="get" action="/delete_bookmarks">
-          <input class="links" type="submit" name="Delete" value="Delete">
-        </form>
-        <form method="get" action="/update_bookmarks">
-          <input class="links" type="submit" name="Update" value="Update">
-        </form>
-      </nav>
+      <a href="/"><h2> Bookmark Manager </h2></a>
     </header>
 
     <main class="add_bookmarks">
-      <p> www.bookmark.com </p>
+
+      <form method="post" action="/updated_bookmarks">
+        <input type="text" placeholder="title" name="title">
+        <input type="text" placeholder="url" name="url">
+        <input type="submit" name="Update" value="Submit">
+      </form>
+
     </main>
 
     <footer class="footer">
