@@ -1,4 +1,4 @@
-# Bookmark
+# Bookmark Manager
 
 
 User stories
@@ -12,7 +12,10 @@ So that I can save a favourite website
 I would like to add a favourite website to bookmarks.
 
 
+Domain model
+-------
+![Alt text](./Bookmark_model.png)
 
-![Alt text](./bookmark_app_model.png)
 
-# Bookmark_Manager
+setup:
+-------
