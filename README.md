@@ -13,5 +13,5 @@ I would like to add a favourite website to bookmarks.
 
 
 
-![Alt text](./Bookmarks_app_model.png)
+![Alt text](./bookmark_app_model.png)
 # Bookmark_Manager
